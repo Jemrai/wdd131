@@ -5,24 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"WDD 131 – Dynamic Web Fundamentals – Adrian</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Jemmotte">
-    <meta author="Jemmotte">
+    <meta name="author" content="Adrian Jemmotte">
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-        <span id="WDD 131 – Dynamic Web Fundamentals"></span>
-        <a href=""> Linkedid </a>
-        <a href="https://byupw.instructure.com/"> Canvas</a>
-        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Favorite Scripture Example</a>
-        <a href="">Final Project</a>
+    <header class="topnav">
+        <span id="course-title"> WDD 131 - Dynamic Web Fundamentals</span>
+        
+        <nav>
+             <a href=""> Linkedid </a>
+            <a href="https://byupw.instructure.com/"> Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
     </header>
     <main>
         <h1>Adrian Jemmotte</h1>
-        <section class="card"></section>
-        <section class="card"></section>
+        <section class="card">
+            <h2>Introduction to Dynamic Web Development</h2>
+            <img src="images/web-dev.jpg" alt="Web development illustration">
+            <p>This section covers the basics of dynamic web fundamentals, including HTML structure, CSS styling, and JavaScript interactivity. Learn how to build responsive and engaging websites.</p>
+        </section>
+        <section class="card">
+            <h2>Scripture Study and Faith</h2>
+            <img src="images/scripture.jpg" alt="Scripture study image">
+            <p>Explore the importance of scripture study in personal growth and faith. This card highlights key principles from the Book of Mormon and how they apply to daily life.</p>
+        </section>
     </main>
     <footer>
-        <span id="© 2024 Adrian Jemmotte| Bolivar State"></span> 
-        <span id="lastModified"></span>
+        <p>&copy; <span id="currentyear"></span> Adrian Jemmotte | Bolivar State</p>
+        <p id="lastModified"></p>
     </footer>
 </body>
 </html>
