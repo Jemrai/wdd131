@@ -1,0 +1,32 @@
+/* Larger view styles (applied via media query) */
+
+@media (min-width: 768px) {
+    #hamburger-btn {
+        display: none; /* Hide hamburger in larger views */
+    }
+
+    #nav-list {
+        display: flex !important; /* Always show nav in larger views */
+        flex-direction: row;
+        position: static;
+        background: none;
+        padding: 0;
+    }
+
+    #nav-list li {
+        margin: 0 1rem;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    .album-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid: up to 3+ columns */
+        gap: 1.5rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+}

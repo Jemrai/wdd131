@@ -1,0 +1,121 @@
+/* Mobile-first CSS for temple album page */
+/* Custom color scheme: Blues and whites for serenity */
+/* Typography: Roboto for body, Playfair Display for headings */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f8ff; /* Alice blue */
+    color: #2c3e50; /* Dark slate gray */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4682b4; /* Steel blue */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#nav-list {
+    list-style: none;
+    display: none; /* Hidden by default in mobile */
+    flex-direction: column;
+    background-color: #4682b4;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    z-index: 10;
+}
+
+#nav-list li {
+    margin: 0.5rem 0;
+}
+
+#nav-list a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+#nav-list a:hover {
+    color: #ffd700; /* Gold for hover */
+}
+
+#hamburger-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block; /* Visible in mobile */
+}
+
+main {
+    max-width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #4682b4;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+footer {
+    background-color: #4682b4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}

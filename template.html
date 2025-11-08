@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A collection of sacred temples from around the world.">
+    <meta name="author" content="Adrian Jemmotte">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- CSS Links (Mobile-first) -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <!-- Deferred JavaScript -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <nav id="nav-menu">
+            <button id="hamburger-btn" aria-label="Toggle navigation menu">☰</button>
+            <ul id="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Explore Sacred Temples</h1>
+        <div class="album-grid">
+            <figure>
+                <img src="images/barcelona.webp" alt="Barcelona, España Temple">
+                <figcaption>Barcelona, España Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/bogota.webp" alt="Bogotá, Colombia Temple">
+                <figcaption>Bogotá, Colombia Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/caracas.webp" alt="Caracas, Venezuela Temple">
+                <figcaption>Caracas, Venezuela Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/manila.webp" alt="Manila, Philippines Temple">
+                <figcaption>Manila, Philippines Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rio.webp" alt="Rio de Janeiro, Brazil Temple">
+                <figcaption>Rio de Janeiro, Brazil Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/roma.webp" alt="Roma, Italy Temple">
+                <figcaption>Roma, Italy Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt.webp" alt="Salt Lake, Utah Temple">
+                <figcaption>Salt Lake, Utah Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/tokio.webp" alt="Tokio, Japan Temple">
+                <figcaption>Tokio, Japan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/viña.webp" alt="Viña del Mar, Chile Temple">
+                <figcaption>Viña del Mar, Chile Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 2025 Adrian Jemmotte | Bolivar State</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
