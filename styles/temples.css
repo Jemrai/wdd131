@@ -1,6 +1,4 @@
-/* Mobile-first CSS for temple album page */
-/* Custom color scheme: Blues and whites for serenity */
-/* Typography: Roboto for body, Playfair Display for headings */
+
 
 * {
     margin: 0;
@@ -10,13 +8,13 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f0f8ff; /* Alice blue */
-    color: #2c3e50; /* Dark slate gray */
+    background-color: #f0f8ff; 
+    color: #2c3e50; 
     line-height: 1.6;
 }
 
 header {
-    background-color: #4682b4; /* Steel blue */
+    background-color: #4682b4; 
     color: white;
     padding: 1rem;
     text-align: center;
@@ -37,7 +35,7 @@ nav {
 
 #nav-list {
     list-style: none;
-    display: none; /* Hidden by default in mobile */
+    display: none;
     flex-direction: column;
     background-color: #4682b4;
     position: absolute;
@@ -60,7 +58,7 @@ nav {
 }
 
 #nav-list a:hover {
-    color: #ffd700; /* Gold for hover */
+    color: #ffd700; 
 }
 
 #hamburger-btn {
@@ -69,7 +67,7 @@ nav {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
-    display: block; /* Visible in mobile */
+    display: block; 
 }
 
 main {
