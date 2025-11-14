@@ -1,0 +1,93 @@
+/* Global CSS Variables */
+:root {
+    --primary-color: #007A33; /* Green from Madagascar flag */
+    --secondary-color: #FF0000; /* Red from Madagascar flag */
+    --accent-color: #FFFFFF; /* White */
+    --text-color: #333333;
+    --background-color: #F5F5F5;
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+.hero {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+}
+
+.weather {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.weather h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Pseudo-element for weather icon in wider view */
+.weather h2::after {
+    content: "⛅";
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.weather-details p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .weather h2::after {
+        display: none; /* Hide emoticon on mobile */
+    }
+    
+    /* Add SVG icon for mobile (assuming you have it as a background or img) */
+    .weather h2 {
+        background-image: url('../images/weather-icon.svg'); /* Path to your SVG */
+        background-repeat: no-repeat;
+        background-position: right center;
+        padding-right: 40px; /* Space for icon */
+    }
+}
+
+@media (min-width: 769px) {
+    /* Wider view keeps emoticon */
+}
